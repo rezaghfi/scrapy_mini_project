@@ -1,2 +1,3 @@
-cd to jalase1
-scrapy crawl myspider -O export.json or csv or xlsx
+scrapy startproject projectname "to create project"
+cd to project "for work in project"
+scrapy crawl myspider -O export.json or csv or xlsx "for export in file"
