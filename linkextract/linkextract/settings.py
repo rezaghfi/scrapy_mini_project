@@ -1,4 +1,4 @@
-# Scrapy settings for jalase1 project
+# Scrapy settings for linkextract project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "jalase1"
+BOT_NAME = "linkextract"
 
-SPIDER_MODULES = ["jalase1.spiders"]
-NEWSPIDER_MODULE = "jalase1.spiders"
+SPIDER_MODULES = ["linkextract.spiders"]
+NEWSPIDER_MODULE = "linkextract.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "jalase1 (+http://www.yourdomain.com)"
+#USER_AGENT = "linkextract (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "jalase1.middlewares.Jalase1SpiderMiddleware": 543,
+#    "linkextract.middlewares.LinkextractSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "jalase1.middlewares.Jalase1DownloaderMiddleware": 543,
+#    "linkextract.middlewares.LinkextractDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "jalase1.pipelines.Jalase1Pipeline": 300,
+#    "linkextract.pipelines.LinkextractPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,7 +91,3 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
-
-FEED_EXPORTERS = {
-    'xlsx': 'scrapy_xlsx.XlsxItemExporter',
-}

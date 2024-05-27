@@ -1,0 +1,2 @@
+cd to jalase1
+scrapy crawl myspider -O export.json or csv or xlsx
