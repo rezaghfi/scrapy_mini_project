@@ -1,2 +1,4 @@
 scrapy
 scrapy-xlsx
+sqlalchemy
+psycopg2-binary
